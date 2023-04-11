@@ -1,0 +1,41 @@
+<style>
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+  }
+  .grid-item{
+    /* background-color: grey; */
+    opacity: .9;
+    padding: 20px;
+  }
+</style>
+
+<p style="color: green"><%= notice %></p>
+
+<h1 style="color:rgb(105, 117, 149)" class="d-flex justify-content-center">Books</h1>
+
+<div  class="container">
+      <% @books.each do |book| %>
+        <div class="grid-item" > 
+            <div>
+              <%= render book %>
+              <p style="color:rgb(120, 39, 39)" class="d-flex justify-content-center">
+                <%= link_to "Show this book", book %>
+              </p>
+
+            </div>
+            <div class="d-flex justify-content-center">
+              <%= button_to "Add to Cart", controller: "cart_items" ,action: "index" , class: "glyphicon glyphicon-shopping-cart" %>
+            </div>
+        </div>
+      <% end %>
+</div> 
+<div class="d-flex justify-content-center">
+  <% if Current.user.present? && Current.user.email == "adityasingh.singh421@gmail.com" %>
+  <%= link_to "New book", new_book_path %>
+  <% end %>
+</div>
+
+
+

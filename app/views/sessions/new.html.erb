@@ -1,0 +1,24 @@
+<h1 style="color:rgb(217, 220, 220)" class="d-flex justify-content-center m-2 p-3">Sign In</h1>
+
+<%= form_with url: sign_in_path do |form|%>
+
+<div class="mb-3 d-flex justify-content-center m-1 p-1">
+    <!-- <%= form.label :Email %> -->
+    <%= form.text_field :email, class: "form-sm", placeholder: "aditya@gmail.com" %>
+</div>
+
+<div class="mb-3 d-flex justify-content-center m-1 p-1">  
+    <!-- <%= form.label :Password %> -->
+    <%= form.password_field :password, class: "form-sm", placeholder: "password" %>
+    <br>
+</div>
+<div class="mb-3 d-flex justify-content-center m-1 p-1">
+    <%= link_to "Forgot Your Password?", password_reset_path %>
+    <br>
+</div>
+
+<div class="mb-3 d-flex justify-content-center m-1 p-1">
+    <%= form.submit "SIGN IN", class: "btn btn-primary" %>
+</div>
+
+<% end %>

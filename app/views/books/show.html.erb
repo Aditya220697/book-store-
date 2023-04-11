@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @book %>
+
+<p style="color:azure" class="d-flex justify-content-center">
+  <!-- <strong>Author name:</strong> -->
+  <%= @book.description %>
+</p>
+
+<% if Current.user.present? && Current.user.email == "adityasingh.singh421@gmail.com" %>
+<div class="text-center">
+  <!-- <div class="badge bg-primary text-wrap" style="width: 6rem;"> -->
+    <%= link_to "Edit this book", edit_book_path(@book) %>    &nbsp;|&nbsp;
+    <%= link_to "Back to books", books_path %><br><br>
+  <!-- </div> -->
+  <%= button_to "Destroy this book", @book, method: :delete %>
+</div>
+<% end %>

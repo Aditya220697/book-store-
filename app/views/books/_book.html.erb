@@ -1,0 +1,21 @@
+<div id="<%= dom_id book %>">
+ <div class="container p-2 d-flex justify-content-center">
+  <% if book.image.url.present? %>
+    <%= image_tag book.image.url, height: 200, width:150 %> 
+  <% end %> 
+</div>
+  <p style="color:rgb(124, 84, 35)" class="d-flex justify-content-center">
+    <!-- <strong>Name:</strong> -->
+    <%= book.name %>
+  </p>
+
+  <p style="color:azure" class="d-flex justify-content-center">
+    <!-- <strong>Author name:</strong> -->
+    <%= number_to_currency(book.price) %>
+  </p>
+
+  
+
+  
+
+</div>

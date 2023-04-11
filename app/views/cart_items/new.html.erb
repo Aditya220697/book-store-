@@ -1,0 +1,12 @@
+<h1>Add to Cart</h1>
+ 
+<%= form_for @cart_item, url: cart_items_path do |f| %>
+  <div class="form-group">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity, class: "form-sm", value: 1, min: 1 %>
+  </div>
+ 
+  <%= f.hidden_field :book_id %>
+ 
+  <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+<% end %>

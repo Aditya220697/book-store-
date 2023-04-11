@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+ /* footer {
+    position:absolute;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* .bg-image
+{
+    height: auto;
+    max-width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    background-image: url('../../assets/images/124383.jpg');
+    height: 1000vh;
+} */
+    /* object-fit:fill;
+            width:2000px;
+            height:3000px;
+            border: solid 1px #CCC
+
+/* .navbar{
+    background-color: blueviolet;
+     color: white;
+} */
+ /* .bg-image{
+    background-image: url("../images/124383.jpg");
+    background-color: blue;
+    height: 2000px;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    opacity: 1; 
+}   */
+/* .container{
+    
+    /* color:darkgreen;  
+}
+*/
+.row{
+     border: 2px solid black;
+    background-color:black;
+     color:darkgreen; 
+}
+.book{
+    border: 2px solid black;
+    background-color:slategrey;
+    opacity:1;
+    
+}
+.txt{
+    color:greenyellow;
+}
+
+  /* mouse over link */
+/* li.highlight:hover{
+    color:darkgreen;
+}
+
+li:visited {
+    color:darkgreen;
+}
+
+ul:hover {
+    color:crimson;
+}
+   */
+.navbar_items:visited{
+    color:beige;
+    opacity: 1;
+}
+
+.navbar_items:hover{
+    color:rgb(4, 15, 15)
+}
+/* .navbar_items:active{
+    background-color:red
+} */
+
+/* .ab_image{
+    background-image: url(../images/le-yien-6X-4dSrc4iU-unsplash.jpg);
+} */
+body{
+    background-color: rgb(195, 179, 179);
+    height: 1000px;
+}
