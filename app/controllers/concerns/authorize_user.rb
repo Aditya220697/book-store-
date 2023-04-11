@@ -1,4 +1,4 @@
-module authorize_user
+module Authorize_user
    # app/controllers/concerns/authentication.rb
     
     def authenticate_user!
