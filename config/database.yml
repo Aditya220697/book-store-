@@ -23,12 +23,12 @@ test:
 production:
   # <<: *default
   # database: db/production.sqlite3
-Host: ec2-44-213-228-107.compute-1.amazonaws.com
-adapter: postgresql
-encoding: unicode 
-Database: d9bn62ll385agm
-Port: 5432
-pool: 5
-username: jzdqikurnrhtuk
-Password: 172eb243bd8e3c14f87706c8057319e1fb27039f87aefdc76a43f3edc7cd2cf7
-URI: postgres://jzdqikurnrhtuk:172eb243bd8e3c14f87706c8057319e1fb27039f87aefdc76a43f3edc7cd2cf7@ec2-44-213-228-107.compute-1.amazonaws.com:5432/d9bn62ll385agm
+  Host: ec2-44-213-228-107.compute-1.amazonaws.com
+  adapter: postgresql
+  encoding: unicode 
+  database: d9bn62ll385agm
+  port: 5432
+  pool: 5
+  username: jzdqikurnrhtuk
+  Password: 172eb243bd8e3c14f87706c8057319e1fb27039f87aefdc76a43f3edc7cd2cf7
+  URI: postgres://jzdqikurnrhtuk:172eb243bd8e3c14f87706c8057319e1fb27039f87aefdc76a43f3edc7cd2cf7@ec2-44-213-228-107.compute-1.amazonaws.com:5432/d9bn62ll385agm
