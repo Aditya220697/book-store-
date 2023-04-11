@@ -38,14 +38,14 @@
     background-color: blueviolet;
      color: white;
 } */
- /* .bg-image{
+ .bg-image{
     background-image: url("../images/124383.jpg");
     background-color: blue;
     height: 2000px;
     background-attachment: fixed;
     background-repeat: repeat-y;
     opacity: 1; 
-}   */
+}  
 /* .container{
     
     /* color:darkgreen;  
@@ -94,7 +94,7 @@ ul:hover {
 /* .ab_image{
     background-image: url(../images/le-yien-6X-4dSrc4iU-unsplash.jpg);
 } */
-body{
+/* body{
     background-color: rgb(195, 179, 179);
     height: 1000px;
-}
+} */

@@ -1,6 +1,6 @@
-<h1>Shopping Cart</h1>
+<h1 style="color:azure">Shopping Cart</h1>
 
-<% @book.each do |item| %>
+<% @cart_items.each do |item| %>
   <p><%= item.book.title %> - <%= item.quantity %> - <%= item.book.price %></p>
 <% end %>
 

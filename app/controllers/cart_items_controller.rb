@@ -20,7 +20,6 @@ class CartItemsController < ApplicationController
 
   def index
     @cart_items = current_cart.cart_items
-    @book= Book.find(book_id)
   end
 
   # GET /cart_items/new

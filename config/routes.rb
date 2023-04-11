@@ -31,12 +31,10 @@ Rails.application.routes.draw do
   get "about", to: "home#about"
 
   get "index", to: "cart_items#index"
-
+  
+  # post "cart" to: "shopping_carts#create"
   # get "author", to: "author#index"
   get "show", to: "author#show"
-
-  # post 'shopping_cart/add/:book_id', to: 'shopping_cart#add', as: 'add_to_cart'
-  # post ""
   
   resources :books do
     resources :cart_items, only: [:create]
@@ -45,5 +43,7 @@ Rails.application.routes.draw do
  # config/routes.rb
   resources :cart_items, only: [:create]
   
+  
+
   resource :shopping_carts, only: [:show]
 end

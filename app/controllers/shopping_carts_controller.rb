@@ -1,4 +1,9 @@
 class ShoppingCartsController < ApplicationController
+    
+    def create
+    end
+  
+  
     def show
       @cart_items = Current.user.cart_items
       @total_price = calculate_total_price(@cart_items)
